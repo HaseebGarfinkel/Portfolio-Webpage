@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Haseeb Garfinkel</title>
+    <title>Haseeb Garfinkel's Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Hello, I'm Haseeb. Welcome to my webpage!</h1>
-      <img src="haseeb.jpeg" width="160" height="213"/>
+      <h1 class="title">Hello, I'm Haseeb. Welcome to my webpage!</h1>
+      <img class="haseebimg" src="haseeb.jpeg" width="160" height="213" alt="Photo of Haseeb Garfinkel">
     </header>
     <article>
       <section>
@@ -25,20 +30,20 @@
         <p>These are some skills that I have picked up through my experiences, both academically and otherwise.</p>
         <ul>
           <li>Programming Languages:</li>
-          <ul>
+          <ul class="innerlist">
             <li>C/C++</li>
             <li>Java</li>
             <li>Python</li>
             <li>JavaScript</li>
           </ul>
           <li>Databases:</li>
-          <ul>
+          <ul class="innerlist">
             <li>MySQL</li>
             <li>PostgreSQL</li>
             <li>MongoDB</li>
           </ul>
           <li>Other Tools:</li>
-          <ul>
+          <ul class="innerlist">
             <li>HTML + CSS</li>
             <li>Git + GitHub</li>
             <li>Linux</li>
@@ -48,26 +53,24 @@
       <section>
         <h2>Experiences</h2>
         <p>Learn a little more about some of the experiences that I have had outside the classroom.</p>
-        <div>
-          <h3>Elegant Mind Club UCLA</h3>
-          <p>I am currently a research assistant at Professor Katsushi Arisaka's lab, aka the Elegant Mind Club. I am working on a team
-            as part of project TERESA - Teleported Reality Surgical AI. My role involves development on a robotic arm built for precise surgical 
-            applications. I am working on embedded code in C and C++ for the arm, as well as simulation software for a computer visualization of
-            it using Python. The goal is to use this simulation to aid in training AI tools for controlling the robot.
-          </p>
-          <h3>HYEL</h3>
-          <p>I previously led a small team on a game development project for a startup app called HYEL. HYEL is a mobile app featuring a 
-            variety of games that users can have fun with and compete with their friends. My team's game was called Ocean Explorers,
-            inspired by the classic game Crossy Road. This experience taught me a lot about software development as me and my team went
-            through the full development lifecycle, including designing, coding, testing, and everything in between. 
-          </p>
-          <h3>De Anza Computer Lab</h3>
-          <p>I also previously spent time as an intern at De Anza College's Computer Lab, in which I worked on getting used computers
-            ready for student use in order to give disadvantaged students access to the technology they needed. My tasks included 
-            wiping computers, configuring new operating systems, and troubleshooting to identify and resolve issues pertaining to 
-            both software and hardware.
-          </p>
-        </div>
+        <h3>Elegant Mind Club UCLA</h3>
+        <p>I am currently a research assistant at Professor Katsushi Arisaka's lab, aka the Elegant Mind Club. I am working on a team
+        as part of project TERESA - Teleported Reality Surgical AI. My role involves development on a robotic arm built for precise surgical 
+        applications. I am working on embedded code in C and C++ for the arm, as well as simulation software for a computer visualization of
+        it using Python. The goal is to use this simulation to aid in training AI tools for controlling the robot.
+        </p>
+        <h3>HYEL</h3>
+        <p>I previously led a small team on a game development project for a startup app called HYEL. HYEL is a mobile app featuring a 
+        variety of games that users can have fun with and compete with their friends. My team's game was called Ocean Explorers,
+        inspired by the classic game Crossy Road. This experience taught me a lot about software development as me and my team went
+        through the full development lifecycle, including designing, coding, testing, and everything in between. 
+        </p>
+        <h3>De Anza Computer Lab</h3>
+        <p>I also previously spent time as an intern at De Anza College's Computer Lab, in which I worked on getting used computers
+        ready for student use in order to give disadvantaged students access to the technology they needed. My tasks included 
+        wiping computers, configuring new operating systems, and troubleshooting to identify and resolve issues pertaining to 
+        both software and hardware.
+        </p>
       </section>
     </article>
   </body>
