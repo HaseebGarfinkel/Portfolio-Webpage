@@ -2,75 +2,158 @@
 <html lang="en">
   <head>
     <title>Haseeb Garfinkel's Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Haseeb Garfinkel">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
-  <body>
+  <body id="body" class="light">
     <header>
-      <h1 class="title">Hello, I'm Haseeb. Welcome to my webpage!</h1>
-      <img class="haseebimg" src="haseeb.jpeg" width="160" height="213" alt="Photo of Haseeb Garfinkel">
+      <h1 class="title"><strong>Haseeb Garfinkel Portfolio</strong><br><br>Welcome to my webpage!</h1>
     </header>
-    <article>
-      <section>
+    <nav>
+      <button id="button">Dark Mode</button>
+    </nav>
+    <article class="aboutme">
+      <aside>
+        <img class="haseebimg" src="haseeb.jpeg" width="240" height="320" alt="Photo of Haseeb Garfinkel">
+      </aside>
+      <section class="aboutmetxt">
         <h2>About Me</h2>
         <p>I'm a Computer Science student at the University of California, Los Angeles (UCLA). 
             My interest lies in software engieering, which I am actively pursuing opportunities in.
             Driven by a desire to help others, I get excited by experiences where I would be able to make a real positive impact.
             Below you can find some tools/technologies that I have worked with in the past, however my greatest skill is not these languages, 
             but rather my ability to use them to solve problems! You can check out some of the stuff I've worked on on my 
-            <a href="https://github.com/HaseebGarfinkel">GitHub</a>. Feel free to shoot me a connection request on 
-            <a href="https://www.linkedin.com/in/haseeb-garfinkel/">LinkedIn</a> as well or email me at haseebgarfinkel@gmail.com to chat!
+            <a target="_blank" href="https://github.com/HaseebGarfinkel">GitHub</a>. Feel free to shoot me a connection request on 
+            <a target="_blank" href="https://www.linkedin.com/in/haseeb-garfinkel/">LinkedIn</a> as well or email me at haseebgarfinkel@gmail.com to chat!
         </p>
       </section>
-      <section>
+    </article>
+    <article>
+      <section class="skills">
         <h2>Skills</h2>
         <p>These are some skills that I have picked up through my experiences, both academically and otherwise.</p>
         <ul>
           <li>Programming Languages:</li>
-          <ul class="innerlist">
-            <li>C/C++</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
+          <li class="list">
+            <ul class="innerlist">
+              <li>C/C++</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
           <li>Databases:</li>
-          <ul class="innerlist">
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-          </ul>
+          <li class="list">
+            <ul class="innerlist">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </li>
           <li>Other Tools:</li>
-          <ul class="innerlist">
-            <li>HTML + CSS</li>
-            <li>Git + GitHub</li>
-            <li>Linux</li>
-          </ul>
+          <li class="list">
+            <ul class="innerlist">
+              <li>HTML + CSS</li>
+              <li>Git + GitHub</li>
+              <li>Linux</li>
+            </ul>
+          </li>
         </ul>
       </section>
+    </article>
+    <div class="experiencegroup">
+      <h2>Experiences</h2>
+      <p>Learn a little more about some of the experiences that I have had outside the classroom.</p>
+      <article class="experiences">
+        <section>
+          <h3>Elegant Mind Club UCLA</h3>
+          <p>I am currently a research assistant at Professor Katsushi Arisaka's lab, aka the Elegant Mind Club. I am working on a team
+          as part of project TERESA - Teleported Reality Surgical AI. My role involves development on a robotic arm built for precise surgical 
+          applications. I am working on embedded code in C and C++ for the arm, as well as simulation software for a computer visualization of
+          it using Python. The goal is to use this simulation to aid in training AI tools for controlling the robot.
+          </p>
+        </section>
+        <section>
+          <h3>HYEL</h3>
+          <p>I previously led a small team on a game development project for a startup app called HYEL. HYEL is a mobile app featuring a 
+          variety of games that users can have fun with and compete with their friends. My team's game was called Ocean Explorers,
+          inspired by the classic game Crossy Road. This experience taught me a lot about software development as me and my team went
+          through the full development lifecycle, including designing, coding, testing, and everything in between. 
+          </p>
+        </section>
+        <section>
+          <h3>De Anza Computer Lab</h3>
+          <p>I also previously spent time as an intern at De Anza College's Computer Lab, in which I worked on getting used computers
+          ready for student use in order to give disadvantaged students access to the technology they needed. My tasks included 
+          wiping computers, configuring new operating systems, and troubleshooting to identify and resolve issues pertaining to 
+          both software and hardware.
+          </p>
+        </section>
+      </article>
+    </div>
+    <div class="projectsgroup">
+      <h2>Projects</h2>
+      <p>Take a look at some of the projects I've worked on.</p>
+      <article class="grid">
+        <section class="g1">
+          <h3>Kelley Blue Book</h3>
+          <p>A full stack client-server application built in Java for storing and managing automobiles!
+          <br>Link: <a target="_blank" href="https://github.com/HaseebGarfinkel/Kelley-Blue-Book">Kelley Blue Book</a></p>
+        </section>
+        <section class="g2">
+          <h3>Game of Life</h3>
+          <p>A cellular automaton simulation built in Python inspired by Comway's Game of Life!
+          <br>Link: <a target="_blank" href="https://github.com/HaseebGarfinkel/Game-Of-Life">Game Of Life</a></p>
+          <img src="gameoflife.png" width="200" height="200" alt="Game Of Life Project Image">
+        </section>
+        <section class="g3">
+          <h3>Ocean Explorer</h3>
+          <p>A mobile game built in Swift as part of my internship program with HYEL!</p>
+          <video width="320" height="700" controls>
+            <source src="oceanexplorer.mp4" type="video/mp4">
+          </video>
+        </section>
+        <section class="g4">
+          <h3>Calcutor</h3>
+          <p>A fully functioning calculator including a GUI made using the Tkinter Python package!
+          <br>Link: <a target="_blank" href="https://github.com/HaseebGarfinkel/Basic-Calculator">Calculator</a></p>
+          <img src="calculator.png" width="200" height="200" alt="Calculator Project Image">
+        </section>
+        <section class="g5">
+          <h3>Airfreight Data Analyzer</h3>
+          <p>A tool to perform analysis and validate airfreight data made in C++!
+          <br>Link: <a target="_blank" href="https://github.com/HaseebGarfinkel/Airfreight-Data-Analyzer">Airfreight Data Analyzer</a></p>
+        </section>
+      </article>
+    </div>
+    <article class="form">
       <section>
-        <h2>Experiences</h2>
-        <p>Learn a little more about some of the experiences that I have had outside the classroom.</p>
-        <h3>Elegant Mind Club UCLA</h3>
-        <p>I am currently a research assistant at Professor Katsushi Arisaka's lab, aka the Elegant Mind Club. I am working on a team
-        as part of project TERESA - Teleported Reality Surgical AI. My role involves development on a robotic arm built for precise surgical 
-        applications. I am working on embedded code in C and C++ for the arm, as well as simulation software for a computer visualization of
-        it using Python. The goal is to use this simulation to aid in training AI tools for controlling the robot.
-        </p>
-        <h3>HYEL</h3>
-        <p>I previously led a small team on a game development project for a startup app called HYEL. HYEL is a mobile app featuring a 
-        variety of games that users can have fun with and compete with their friends. My team's game was called Ocean Explorers,
-        inspired by the classic game Crossy Road. This experience taught me a lot about software development as me and my team went
-        through the full development lifecycle, including designing, coding, testing, and everything in between. 
-        </p>
-        <h3>De Anza Computer Lab</h3>
-        <p>I also previously spent time as an intern at De Anza College's Computer Lab, in which I worked on getting used computers
-        ready for student use in order to give disadvantaged students access to the technology they needed. My tasks included 
-        wiping computers, configuring new operating systems, and troubleshooting to identify and resolve issues pertaining to 
-        both software and hardware.
-        </p>
+        <h2>Feedback Form</h2>
+        <p>Leave me some feedback about my page if you'd like.</p>
+        <form>
+          <label for="name">Name: </label>
+          <input type="text" id="name" required pattern="[a-zA-z]+ [a-zA-z]+">
+          <p>Must be in the format: FirstName LastName</p><br>
+          <label for="email">Email: </label>
+          <input type="email" id="email" required>
+          <fieldset>
+            <legend>How do you feel about my page?</legend>
+            <input type="radio" id="good" name="feeling" required>
+            <label for="good">It's good</label>
+            <input type="radio" id="bad" name="feeling">
+            <label for="bad">It's bad</label>
+            <input type="radio" id="okay" name="feeling">
+            <label for="okay">It's okay</label>
+          </fieldset>
+          <input type="submit" value="Submit!">
+        </form>
       </section>
     </article>
   </body>
