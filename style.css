@@ -45,7 +45,7 @@ a:hover {
 
 .dark {
     color-scheme: dark;
-    background: linear-gradient(45deg, var(--dark-bg1), var(--dark-bg2));
+    background: radial-gradient(var(--dark-bg1), var(--dark-bg2));
 }
 
 body {
